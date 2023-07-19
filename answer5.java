@@ -8,19 +8,19 @@ public class answer5 {
 
 	     for(int num = lower + 1; num < higher; ++num) {
 	       int dig= 0, result = 0;
-	       int temp = num;
+	       int tem = num;
 
-	       while (temp != 0) {
-	        temp /= 10;
+	       while (tem != 0) {
+	        tem =tem/ 10;
 	         ++dig;
 	       }
 
-	       temp = num;
+	       tem= num;
 
-	       while (temp != 0) {
-	         int rem = temp % 10;
+	       while (tem != 0) {
+	         int rem = tem % 10;
 	         result += Math.pow(rem, dig);
-	         temp /= 10;
+	         tem =tem/ 10;
 	       }
 	       
 	       
